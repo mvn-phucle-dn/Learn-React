@@ -34,11 +34,6 @@ class App extends Component {
           </div>}
           {(page === 'about') && <div className="circles">About page</div>}
         </section>
-        
-        {/* <div className="container">
-          <img src="./logo.svg" alt="Logo" />
-          <h3>Hello React !!!</h3>
-        </div> */}
       </main>
       <Footer></Footer>
       </>
