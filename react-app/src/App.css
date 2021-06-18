@@ -135,3 +135,36 @@ body a {
   background: rgb(133,159,110);
   background: linear-gradient(90deg, rgba(133,159,110,1) 0%, rgba(146,172,124,1) 35%, rgba(154,184,131,1) 100%);
 }
+
+/* style for circles */
+.circles {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  margin-top: 20px
+}
+.cirle-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.cirle-block div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 10px
+}
+.tab-list button {
+  cursor: pointer;
+  background: #355B4C;
+  border: solid 1px #F1B24A;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+}
+.tab-list button:hover {
+  color: #F1B24A;
+}

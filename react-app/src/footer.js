@@ -3,7 +3,7 @@ import React from 'react';
 class Footer extends React.Component {
   render() {
     return (
-      <footer class="page-footer flex-centered">
+      <footer className="page-footer flex-centered">
         {/* <div class="footer-left">
           <img src="./cactus.png" alt="Logo" />
         </div> */}
