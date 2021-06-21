@@ -186,13 +186,17 @@ body a {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  background: #355B4C;
+  background: #fff;
+  color: #333;
   border: solid 1px #F1B24A;
   border-radius: 10px;
   margin: 10px;
 }
 .list-new li img {
   width: 100px;
+}
+.list-new h3 {
+  color: #355B4C;
 }
 .list-new .news-content {
   text-align: left;
