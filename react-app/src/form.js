@@ -32,7 +32,7 @@ class Form extends Component {
 
   handleChange = (e) => {
     const target = e.target
-    const value = target.type === 'radio' ? target.checked : target.value
+    const value = target.value
     const name = target.name
 
     this.setState(prev => ({
