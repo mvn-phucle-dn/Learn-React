@@ -206,11 +206,14 @@ body a {
 }
 
 /* style for form */
+.form-wrap {
+  margin: 50px 0;
+}
 .register-form {
-  width: 500px;
+  width: 30%;
   border: solid 1px #F1B24A;
   border-radius: 10px;
-  margin: 50px auto;
+  float: left;
   padding: 20px;
   text-align: left;
 }
@@ -240,8 +243,8 @@ textarea {
 }
 table {
   border-collapse: collapse;
-  width: 500px;
-  margin: 50px auto;
+  width: 65%;
+  float: right;
 }
 table th,
 table td {

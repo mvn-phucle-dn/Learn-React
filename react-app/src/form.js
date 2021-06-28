@@ -56,7 +56,7 @@ class Form extends Component {
   render() {
     const { form, users } = this.state;
     return (
-      <div>
+      <div className="container form-wrap">
         <form className="register-form" onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label>Email address</label>
