@@ -42,7 +42,6 @@ class Circle extends Component {
   }
 
   render() {
-    console.log(this.props);
     const { sty } = this.props;
     const style = {
       width: (sty),
