@@ -3,11 +3,11 @@ import './App.css';
 import Header from './header';
 import Footer from './footer';
 import Circle from './circle';
+import Form from './form';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    // this.closeNew = this.closeNew.bind(this);
     this.state = {
       page: 'home',
       data: [
@@ -58,7 +58,6 @@ class App extends Component {
   render() {
     const { page }  = this.state;
     const { data }  = this.state;
-    console.log(data);
     const news = this.state.data;
     const newList = news.map(e => (<li key={e.id}><img src={e.img} alt="thumb"/><div className="news-content"><h3>{e.title}</h3><p>{e.content}</p></div><button type="button" className="icon-close" onClick={this.closeNew.bind(this, e)}>Delete</button></li>));
     return (
@@ -68,18 +67,19 @@ class App extends Component {
         <section className="tab-list">
           <div className="button-list">
             <button onClick={() => this.handleChangePage('home')}>Page Home</button>
-            <button onClick={() => this.handleChangePage('about')}>Page About</button>
+            <button onClick={() => this.handleChangePage('newList')}>Page News List</button>
+            <button onClick={() => this.handleChangePage('contact')}>Page Contact</button>
           </div>
           {(page === 'home') && <div className="circles">
               <Circle sty="50px" num="50"></Circle>
               <Circle sty="50px" num="40"></Circle>
               <Circle sty="50px" num="30"></Circle>
           </div>}
-          {(page === 'about') && <div className="circles">About page</div>}
-        </section>
-        <section className="list-key">
-          {(data.length > 0) && <ul className="list-new">{newList}</ul>}
-          {(data.length === 0) && <ul className="list-new"><li>Bạn ko còn item nào.</li></ul>}
+          {(page === 'newList') && <div className="list-key">
+            {(data.length > 0) && <ul className="list-new">{newList}</ul>}
+            {(data.length === 0) && <ul className="list-new"><li>Bạn ko còn item nào.</li></ul>}
+          </div>}
+          {(page === 'contact') && <Form></Form>}
         </section>
       </main>
       <Footer></Footer>
