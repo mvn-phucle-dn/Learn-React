@@ -3,7 +3,7 @@ import './App.css';
 import Header from './header';
 import Footer from './footer';
 import Circle from './circle';
-import Form from './form';
+import FormHooks from './formHooks';
 
 class App extends Component {
   constructor(props) {
@@ -79,7 +79,7 @@ class App extends Component {
             {(data.length > 0) && <ul className="list-new">{newList}</ul>}
             {(data.length === 0) && <ul className="list-new"><li>Bạn ko còn item nào.</li></ul>}
           </div>}
-          {(page === 'contact') && <Form></Form>}
+          {(page === 'contact') && <FormHooks></FormHooks>}
         </section>
       </main>
       <Footer></Footer>
