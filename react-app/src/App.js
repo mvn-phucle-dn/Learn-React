@@ -4,6 +4,7 @@ import Header from './header';
 import Footer from './footer';
 import Circle from './circle';
 import FormHooks from './formHooks';
+import Pagination from './pagination';
 
 class App extends Component {
   constructor(props) {
@@ -69,6 +70,7 @@ class App extends Component {
             <button onClick={() => this.handleChangePage('home')}>Page Home</button>
             <button onClick={() => this.handleChangePage('newList')}>Page News List</button>
             <button onClick={() => this.handleChangePage('contact')}>Page Contact</button>
+            <button onClick={() => this.handleChangePage('users')}>Page List user</button>
           </div>
           {(page === 'home') && <div className="circles">
               <Circle sty="50px" num="50"></Circle>
@@ -80,6 +82,7 @@ class App extends Component {
             {(data.length === 0) && <ul className="list-new"><li>Bạn ko còn item nào.</li></ul>}
           </div>}
           {(page === 'contact') && <FormHooks></FormHooks>}
+          {(page === 'users') && <Pagination></Pagination>}
         </section>
       </main>
       <Footer></Footer>
