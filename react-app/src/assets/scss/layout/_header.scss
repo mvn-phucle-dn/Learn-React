@@ -1,0 +1,37 @@
+page-header .container {
+  height: 70px;
+}
+.header-logo {
+  width: 70px;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.nav-item {
+  padding: 0 25px;
+}
+.nav-link {
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  border-top: solid 3px transparent;
+}
+.nav-link.active,
+.nav-link:hover {
+  color: #F1B24A;
+  border-top: solid 3px #F1B24A;
+}
+.social-list {
+  list-style: none;
+  display: flex;
+  width: 100px;
+}
+.social-list li{
+  padding: 0 5px;
+}
+.social-list li img{
+  width: 20px;
+  height: 20px;
+}

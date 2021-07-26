@@ -1,0 +1,67 @@
+.list-new {
+  padding: 0;
+  width: 700px;
+  margin: 50px auto;
+}
+.list-new li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  color: #333;
+  border: solid 1px #F1B24A;
+  border-radius: 10px;
+  margin: 10px;
+}
+.list-new li img {
+  width: 100px;
+}
+.list-new h3 {
+  color: #355B4C;
+}
+.list-new .news-content {
+  text-align: left;
+}
+.icon-close {
+  cursor: pointer;
+}
+
+/* style for circles */
+.circles {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  margin-top: 20px
+}
+.cirle-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.cirle-block div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 10px
+}
+.tab-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-main button {
+  cursor: pointer;
+  background: #355B4C;
+  border: solid 1px #F1B24A;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+}
+.tab-list button:hover {
+  color: #F1B24A;
+}
