@@ -1,0 +1,23 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+.page-main {
+  min-height: calc(100vh -  130px);
+  text-align: center;
+  button {
+    cursor: pointer;
+    background: #355B4C;
+    border: solid 1px #F1B24A;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+  }
+}
+.page-main img {
+  width: 512px;
+}

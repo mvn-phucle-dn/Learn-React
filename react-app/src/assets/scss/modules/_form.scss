@@ -1,0 +1,43 @@
+.login-form {
+  width: 500px;
+  border: solid 1px #F1B24A;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  margin: 50px auto;
+}
+.form-wrap {
+  margin: 50px 0;
+}
+.register-form {
+  width: 30%;
+  border: solid 1px #F1B24A;
+  border-radius: 10px;
+  float: left;
+  padding: 20px;
+  text-align: left;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: solid 1px #ccc;
+}
+textarea {
+  resize: none;
+}
+.radio-group label {
+  margin-right: 20px;
+}
+.radio-group input {
+  margin-right: 5px;
+}
+.button-action {
+  text-align: right;
+}

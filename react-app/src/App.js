@@ -1,71 +1,87 @@
 import React, { Component } from 'react';
-import './App.css';
-import Header from './header';
-import Footer from './footer';
+import './assets/scss/styles.scss';
+import Header from './component/header';
+import Footer from './component/footer';
 import Circle from './circle';
 import FormHooks from './formHooks';
 import Pagination from './pagination';
+import Features from './pages/Features';
+import Account from './pages/Account';
+import {BrowserRouter, Switch, Route} from "react-router-dom";
+import PrivateRoute from './core/guards/PrivateRoute';
+import Auth from './pages/Auth';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      page: 'home',
-      data: [
-        {
-          id: 1,
-          title: 'This is title 1',
-          content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-          img: './yibo.jpeg'
-        },
-        {
-          id: 2,
-          title: 'This is title 2',
-          content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-          img: './yibo.jpeg'
-        },
-        {
-          id: 3,
-          title: 'This is title 3',
-          content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-          img: './yibo.jpeg'
-        },
-        {
-          id: 4,
-          title: 'This is title 4',
-          content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-          img: './yibo.jpeg'
-        },
-        {
-          id: 5,
-          title: 'This is title 5',
-          content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-          img: './yibo.jpeg'
-        }
-      ],
-    }
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     page: 'home',
+  //     data: [
+  //       {
+  //         id: 1,
+  //         title: 'This is title 1',
+  //         content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+  //         img: './yibo.jpeg'
+  //       },
+  //       {
+  //         id: 2,
+  //         title: 'This is title 2',
+  //         content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+  //         img: './yibo.jpeg'
+  //       },
+  //       {
+  //         id: 3,
+  //         title: 'This is title 3',
+  //         content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+  //         img: './yibo.jpeg'
+  //       },
+  //       {
+  //         id: 4,
+  //         title: 'This is title 4',
+  //         content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+  //         img: './yibo.jpeg'
+  //       },
+  //       {
+  //         id: 5,
+  //         title: 'This is title 5',
+  //         content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+  //         img: './yibo.jpeg'
+  //       }
+  //     ],
+  //   }
+  // }
 
-  handleChangePage(page) {
-    this.setState({
-      page
-    });
-  }
-  closeNew(item) {
-    const data = this.state.data.filter(i => i.id !== item.id)
-    this.setState({data})
-  }
+  // handleChangePage(page) {
+  //   this.setState({
+  //     page
+  //   });
+  // }
+  // closeNew(item) {
+  //   const data = this.state.data.filter(i => i.id !== item.id)
+  //   this.setState({data})
+  // }
 
   render() {
-    const { page }  = this.state;
-    const { data }  = this.state;
-    const news = this.state.data;
-    const newList = news.map(e => (<li key={e.id}><img src={e.img} alt="thumb"/><div className="news-content"><h3>{e.title}</h3><p>{e.content}</p></div><button type="button" className="icon-close" onClick={this.closeNew.bind(this, e)}>Delete</button></li>));
+    // const { page }  = this.state;
+    // const { data }  = this.state;
+    // const news = this.state.data;
+    // const newList = news.map(e => (<li key={e.id}><img src={e.img} alt="thumb"/><div className="news-content"><h3>{e.title}</h3><p>{e.content}</p></div><button type="button" className="icon-close" onClick={this.closeNew.bind(this, e)}>Delete</button></li>));
     return (
       <>
       <Header></Header>
       <main className="page-main">
-        <section className="tab-list">
+        <Switch>
+          <PrivateRoute path="/account">
+            <Account />
+          </PrivateRoute>
+          <Route path="/auth">
+            <Auth />
+          </Route>
+          <Route path="/">
+            <Features />
+          </Route>
+        </Switch>
+        {/* <section className="tab-list">
           <div className="button-list">
             <button onClick={() => this.handleChangePage('home')}>Page Home</button>
             <button onClick={() => this.handleChangePage('newList')}>Page News List</button>
@@ -83,7 +99,7 @@ class App extends Component {
           </div>}
           {(page === 'contact') && <FormHooks></FormHooks>}
           {(page === 'users') && <Pagination></Pagination>}
-        </section>
+        </section> */}
       </main>
       <Footer></Footer>
       </>
