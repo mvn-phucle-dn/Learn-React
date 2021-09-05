@@ -19,9 +19,6 @@ const Features = () => {
         <Route path="/contact">
           <Contact/>
         </Route>
-        {/* <Route path="/users">
-          <Users/>
-        </Route> */}
         <PrivateRoute path="/users">
           <Users />
         </PrivateRoute>

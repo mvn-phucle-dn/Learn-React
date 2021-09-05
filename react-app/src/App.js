@@ -5,7 +5,6 @@ import Footer from './component/footer';
 import Features from './pages/Features';
 import Account from './pages/Account';
 import { Switch, Route} from "react-router-dom";
-import PrivateRoute from './core/guards/PrivateRoute';
 import Auth from './pages/Auth';
 
 class App extends Component {

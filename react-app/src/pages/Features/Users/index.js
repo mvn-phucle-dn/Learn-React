@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -27,7 +28,7 @@ const Users = () => {
               <li className="member-item" key={e.id}>
                 <img src={e.avatar} alt="thumb" />
                 <div className="member-info">
-                  <h3><a href="#">{e.first_name}</a></h3>
+                  <h3><Link to="/">{e.first_name}</Link></h3>
                   <p>{e.email}</p>
                 </div>
               </li>
