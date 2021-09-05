@@ -66,11 +66,6 @@ const News = () => {
     },
   ]);
 
-  function handleRemove(id) {
-    const newList = news.filter(e => e.id !== id);
-    setNews(newList);
-  }
-
   const handleFav = (e, id) => {
     e.preventDefault();
     const newProds = news.map(e => {
