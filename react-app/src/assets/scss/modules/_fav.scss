@@ -1,0 +1,18 @@
+/* icon heart */
+.news-fav {
+  color: #355B4C;
+  cursor: pointer;
+  &.active{
+    color: #F1B24A;
+  }
+}
+.wrap-fav-counter {
+  position: relative;
+  span {
+    position: absolute;
+    top: 1px;
+    font-size: 12px;
+    right: 6px;
+    color: #F1B24A;
+  }
+}

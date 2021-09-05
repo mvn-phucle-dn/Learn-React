@@ -14,13 +14,13 @@ const Header = () => {
         <nav className="navbar">
           <ul className="nav-list">
             <li className="nav-item">
-              <NavLink activeClassName="active" className="nav-link" to="/">Home</NavLink>
+              <NavLink exact className="nav-link" to="/">Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink activeClassName="active" className="nav-link" to="/category">Category</NavLink>
+              <NavLink activeClassName="active" className="nav-link" to="/news">News</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink activeClassName="active" className="nav-link" to="/sale">Sale</NavLink>
+              <NavLink activeClassName="active" className="nav-link" to="/users">Users</NavLink>
             </li>
             <li className="nav-item">
               <NavLink activeClassName="active" className="nav-link" to="/contact">Contact</NavLink>
@@ -28,10 +28,10 @@ const Header = () => {
           </ul>
         </nav>
         <ul className="social-list">
-          <li><NavLink to="/account">
+          <li><NavLink to="/">
             <span className="wrap-fav-counter">
               <FaHeart/>
-              {favs.length && <span>{favs.length}</span>}
+              {favs.length ? <span>{favs.length}</span> : <span>{favs.length}</span>}
             </span>
           </NavLink></li>
           <li><NavLink to="/account"><FaUser /></NavLink></li>

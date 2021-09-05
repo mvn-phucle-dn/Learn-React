@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-// import './assets/scss/styles.scss';
-import './App.css';
+// import './App.css';
 import Header from './component/header';
 import Footer from './component/footer';
-import Circle from './circle';
-import FormHooks from './formHooks';
-import Pagination from './pagination';
 import Features from './pages/Features';
 import Account from './pages/Account';
-import {BrowserRouter, Switch, Route} from "react-router-dom";
+import { Switch, Route} from "react-router-dom";
 import PrivateRoute from './core/guards/PrivateRoute';
 import Auth from './pages/Auth';
 
@@ -20,9 +16,9 @@ class App extends Component {
       <Header></Header>
       <main className="page-main">
         <Switch>
-          <PrivateRoute path="/account">
+          <Route path="/account">
             <Account />
-          </PrivateRoute>
+          </Route>
           <Route path="/auth">
             <Auth />
           </Route>

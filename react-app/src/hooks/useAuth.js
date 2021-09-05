@@ -13,8 +13,6 @@ const useAuth = () => {
         setUser({email});
         setIsLogged(true);
         history.push('/account');
-        console.log(email);
-        console.log(password);
         res(email);
       }, 1000);
     })

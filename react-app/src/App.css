@@ -215,13 +215,15 @@ body a {
   margin: 50px auto;
 }
 .form-wrap {
-  margin: 50px 0;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
 }
 .register-form {
   width: 30%;
   border: solid 1px #F1B24A;
   border-radius: 10px;
-  float: left;
+  /* float: left; */
   padding: 20px;
   text-align: left;
 }
@@ -252,7 +254,7 @@ textarea {
 table {
   border-collapse: collapse;
   width: 65%;
-  float: right;
+  /* float: right; */
 }
 table th,
 table td {
@@ -304,6 +306,28 @@ table td {
   position: absolute;
   top: 0;
   font-size: 10px;
-  right: 6px;
+  right: 5px;
   color: red;
+}
+
+/* List member */
+.list-key {
+  width: 900px;
+  margin: 50px auto;
+}
+.list-member {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.list-member .member-item {
+  width: 25%;
+  list-style: none;
+  padding: 20px 0;
+}
+.list-member img {
+  width: auto;
+}
+.list-member a:hover {
+  color: #F1B24A;
 }

@@ -4,10 +4,11 @@ import React, { Suspense, lazy } from 'react';
 // import Sale from './Sale';
 // import Contact from './Contact';
 import { Switch, Route } from 'react-router-dom';
+import PrivateRoute from '../../core/guards/PrivateRoute';
 
 const Home = lazy(() => import('./Home'));
-const Category = lazy(() => import('./Category'));
-const Sale = lazy(() => import('./Sale'));
+const News = lazy(() => import('./News'));
+const Users = lazy(() => import('./Users'));
 const Contact = lazy(() => import('./Contact'));
 
 const Features = () => {
@@ -18,11 +19,14 @@ const Features = () => {
         <Route path="/contact">
           <Contact/>
         </Route>
-        <Route path="/sale">
-          <Sale/>
-        </Route>
-        <Route path="/category">
-          <Category/>
+        {/* <Route path="/users">
+          <Users/>
+        </Route> */}
+        <PrivateRoute path="/users">
+          <Users />
+        </PrivateRoute>
+        <Route path="/news">
+          <News/>
         </Route>
         <Route path="/">
           <Home/>
