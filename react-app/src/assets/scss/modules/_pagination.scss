@@ -2,28 +2,20 @@
 .pagination {
   display: flex;
   justify-content: center;
-}
-.pagination .page-item {
-  list-style: none;
-  cursor: pointer;
-  background: #355B4C;
-  border: solid 1px #F1B24A;
-  color: #fff;
-  /* border-radius: 20px; */
-  padding: 10px;
-  margin: 5px;
-}
-.page-item.disable {
-  background: #ccc;
-}
-.page-item.active {
-  color: #F1B24A;
-}
-.list-user {
-  width: 100%;
-  margin: 20px 0;
-}
-.list-user .avatar {
-  width: 50px;
-  border-radius: 50%;
+  margin-bottom: 50px;
+  .page-item {
+    list-style: none;
+    cursor: pointer;
+    background: #355B4C;
+    border: solid 1px #F1B24A;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    &.disable {
+      background: #ccc;
+    }
+    &.active {
+      color: #F1B24A;
+    }
+  }
 }

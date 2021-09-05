@@ -1,4 +1,4 @@
-import react, { useState } from 'react';
+import { useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
@@ -21,8 +21,8 @@ const Login = () => {
 
   return (
     <div className="container">
-      <h1>Login page</h1>
-      <form className="login-form" onSubmit={handleSubmit}>
+      <h1 className="title-page">Login page</h1>
+      <form className="form-control login-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Email address</label>
           <input type="text" name="email" onChange={handleChange}/>

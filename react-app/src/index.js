@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+// import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './assets/scss/styles.scss';
 import { BrowserRouter as Router } from "react-router-dom";
 import { store } from './store'
 import { Provider } from 'react-redux'
