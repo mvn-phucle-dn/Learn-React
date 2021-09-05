@@ -1,16 +1,3 @@
-// import React, {  } from 'react';
-
-// const Contact = () => {
-//   return (
-//     <div className="container">
-//       <h1>Welcome to Contact page</h1>
-//     </div>
-//   )
-// }
-
-
-// export default Contact;
-
 import React, { useState } from 'react';
 
 let id = 0;

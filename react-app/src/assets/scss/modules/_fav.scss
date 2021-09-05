@@ -2,6 +2,10 @@
 .news-fav {
   color: #355B4C;
   cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
   &.active{
     color: #F1B24A;
   }
