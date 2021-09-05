@@ -14,9 +14,11 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    auth.login(form.email, form.password).then(e => {
-      console.log(e);
-    });
+    if(form.email) {
+      auth.login(form.email, form.password).then(e => {
+        console.log(e);
+      });
+    }
   }
 
   return (
