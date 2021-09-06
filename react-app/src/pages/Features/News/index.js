@@ -12,56 +12,56 @@ const News = () => {
       id: 1,
       title: 'This is title 1',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-      img: './yibo.jpeg',
+      img: './thuysi1.jpeg',
       favs: false
     },
     {
       id: 2,
       title: 'This is title 2',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-      img: './zhan1.jpeg',
+      img: './thuysi2.jpeg',
       favs: false
     },
     {
       id: 3,
       title: 'This is title 3',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-      img: './yibo2.jpeg',
+      img: './thuysi3.png',
       favs: false
     },
     {
       id: 4,
       title: 'This is title 4',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-      img: './zhan2.jpeg',
+      img: './thuysi4.jpeg',
       favs: false
     },
     {
       id: 5,
       title: 'This is title 5',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-      img: './yibo3.jpeg',
+      img: './thuysi5.jpeg',
       favs: false
     },
     {
       id: 6,
       title: 'This is title 1',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-      img: './yibo.jpeg',
+      img: './thuysi6.jpeg',
       favs: false
     },
     {
       id: 7,
       title: 'This is title 2',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-      img: './zhan1.jpeg',
+      img: './thuysi7.jpeg',
       favs: false
     },
     {
       id: 8,
       title: 'This is title 3',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-      img: './yibo2.jpeg',
+      img: './thuysi8.jpeg',
       favs: false
     },
   ]);

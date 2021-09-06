@@ -14,9 +14,15 @@
   position: relative;
   span {
     position: absolute;
-    top: 1px;
+    top: -5px;
     font-size: 12px;
-    right: 6px;
+    right: -11px;
     color: #F1B24A;
+    width: 15px;
+    height: 15px;
+    background: #355B4C;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 2px;
   }
 }
