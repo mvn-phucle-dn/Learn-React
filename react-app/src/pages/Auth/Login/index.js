@@ -14,7 +14,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(form.email) {
+    if(form.email && form.password) {
       auth.login(form.email, form.password).then(e => {
         console.log(e);
       });
